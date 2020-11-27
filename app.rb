@@ -7,6 +7,11 @@ get '/' do
 end
 
 post '/intentar' do
-    session[:pais_oculto]= "* h * * *"
+    if params[:letra] == "h"
+        session[:pais_oculto]= "* h * * *"
+    else
+        session[:feedback] = "la letra #{params[:letra]} no esta en la palabra"
+    end
+    
     erb :index
 end
