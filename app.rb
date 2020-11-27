@@ -2,5 +2,5 @@ require 'sinatra'
 require './config'
 
 get '/' do
-    'hola mundo test'
+    erb :index
 end
