@@ -6,4 +6,7 @@ When("inicio de la aplicacion") do
     expect(page).to have_css "h1", text: titulo
   end
 
-  
+  When("introduzco la letra {string}") do |letra|
+    fill_in("letra", :with => letra)
+    click_button("Intentar")
+  end
