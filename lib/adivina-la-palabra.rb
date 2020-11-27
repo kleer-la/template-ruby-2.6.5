@@ -2,10 +2,15 @@ class AdivinaLaPalabra
   
     def ocultar_palabra(palabra)
         @palabraAAdivinar = palabra
-        return "*" *palabra.size
+        @palabraOculta = "*" *palabra.size
+        return @palabraOculta
     end 
 
-    def esta_la_letra? (letra)
-        return @palabraAAdivinar.include? letra
+    def destaparLetra (letra)
+        (0..@palabraAAdivinar.size).each do |index|
+            if(index == letra)
+            end
+        end
+        return "****a****a"
     end
 end

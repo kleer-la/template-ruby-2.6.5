@@ -11,17 +11,10 @@ describe AdivinaLaPalabra do
         asteriscos = adivinaLaPalabra.ocultar_palabra "inglaterra"
         expect(asteriscos).not_to eq "*****"
     end
-    it "la letra está en la palabra" do
+    it "destapar letra a" do
         adivinaLaPalabra =  AdivinaLaPalabra.new
         asteriscos = adivinaLaPalabra.ocultar_palabra "inglaterra"
-        estaLaPalabra =  adivinaLaPalabra.esta_la_letra? "a"
-        expect(estaLaPalabra).to eq 'inglaterra'
-    end
-
-    it "la letra no está en la palabra" do
-        adivinaLaPalabra =  AdivinaLaPalabra.new
-        asteriscos = adivinaLaPalabra.ocultar_palabra "inglaterra"
-        estaLaPalabra =  adivinaLaPalabra.esta_la_letra? "j"
-        expect(estaLaPalabra).not_to eq true
+        estaLaPalabra =  adivinaLaPalabra.destaparLetra "a"
+        expect(estaLaPalabra).to eq '****a****a'
     end
 end
