@@ -26,4 +26,3 @@ for unit test:
 
 for acceptance test:
 	cucumber
-Demo de prueba CI/CD
