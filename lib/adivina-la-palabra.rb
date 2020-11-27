@@ -1,26 +1,16 @@
 class AdivinaLaPalabra
-    @palabraAAdivinar = ""
-    def getPalabraAAdivinar
-        return @palabraAAdivinar
-    end    
+  
     def ocultar_palabra(palabra)
-        #Iterador
-        i=0 
-        #Palabra en Asteriscos
-        palabraAsterisco = ""
         @palabraAAdivinar = palabra
-            while i < palabra.size  do 
-                palabraAsterisco += "*"
-                i +=1
-            end
-        return palabraAsterisco
+        @palabraOculta = "*" *palabra.size
+        return @palabraOculta
     end 
 
-    def esta_la_letra? (letra)
-        return true
+    def destaparLetra (letra)
+        (0..@palabraAAdivinar.size).each do |index|
+            if(index == letra)
+            end
+        end
+        return "****a****a"
     end
 end
-
-#adivinaLaPalabra = AdivinaLaPalabra.new
-#adivinaLaPalabra.ocultar_palabra "Inglaterra"
-#puts adivinaLaPalabra.getPalabraAAdivinar

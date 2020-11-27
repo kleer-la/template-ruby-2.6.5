@@ -8,12 +8,13 @@ describe AdivinaLaPalabra do
     end
     it "Convertir la palabra en asteriscos cantidad incorrecta" do
         adivinaLaPalabra = AdivinaLaPalabra.new
-        asteriscos = adivinaLaPalabra.ocultar_palabra "Inglaterra"
+        asteriscos = adivinaLaPalabra.ocultar_palabra "inglaterra"
         expect(asteriscos).not_to eq "*****"
     end
-    it "la letra está en la palabra" do
+    it "destapar letra a" do
         adivinaLaPalabra =  AdivinaLaPalabra.new
-        estaLaPalabra =  adivinaLaPalabra.esta_la_letra? "a"
-        expect(estaLaPalabra).to eq true
+        asteriscos = adivinaLaPalabra.ocultar_palabra "inglaterra"
+        estaLaPalabra =  adivinaLaPalabra.destaparLetra "a"
+        expect(estaLaPalabra).to eq '****a****a'
     end
 end
