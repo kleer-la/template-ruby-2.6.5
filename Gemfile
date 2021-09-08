@@ -11,6 +11,6 @@ gem 'cucumber', '~> 3.1', '>= 3.1.2' # aceptance testting
 gem 'capybara', '~> 3.32', '>= 3.32.1' # framework to inspect web components
 gem 'poltergeist', '~> 1.18', '>= 1.18.1' #for js testing
 gem 'rack-test', '~> 1.1'# default web driver for capybara
-gem 'better_errors', '~> 2.7' #better log errors on web
+gem 'better_errors', '~> 2.8' #better log errors on web
 gem "rubycritic"
 gem 'rubocop'
