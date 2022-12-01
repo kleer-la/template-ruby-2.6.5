@@ -3,7 +3,7 @@ ruby '2.6.5'
 
 source "https://rubygems.org"
 
-gem 'sinatra', '~> 2.0', '>= 2.0.8.1' #web framework
+gem 'sinatra', '~> 2.2' #web framework
 gem 'rspec', '~> 3.9' #unit testing
 gem 'simplecov', '~> 0.18.5' #coverage report
 gem 'simplecov-console', '~> 0.7.2' #coverage console report
